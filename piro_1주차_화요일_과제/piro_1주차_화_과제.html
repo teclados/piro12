@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>트위터. 지금 일어나고 있는 일입니다.</title>
+
+    <style>
+        html, body { margin: 0;}
+
+        #main {
+            height: 710px;
+            overflow:hidden;
+            border-bottom: 1px solid #E6ECF0;
+        }
+        #intro {
+            width: 50%;
+            height: 710px;
+            float:left;
+            background-image: url("info_image.jpg");
+            background-size: 100%;
+        }
+        #service {
+            width: 50%;
+            height: 710px;
+            float: left;
+        }
+        #footer {
+            width: 100%;
+            height: 44px;
+            overflow: hidden;
+        }
+        #footer ul {
+            overflow: hidden;
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            margin: 0 113px;
+        }
+        #footer li {
+            float: left;
+            list-style: none;
+            margin-left: 17px;
+            font-size: 12px;
+        }
+        a {
+            text-decoration: none;
+            color: #AAB8C2;
+        }
+        .year {color: #AAB8C2}
+        a:hover {
+            text-decoration: underline;
+        }
+        .sign-in-button {
+            border-radius: 30px;
+            background-color: #1DA1F2;
+            color: white;
+        }
+        .login-button {
+            border: 1px solid #1DA1F2;
+            border-radius: 30px;
+            background-color: white;
+            color: #1DA1F2;
+        }
+        #s-login {
+            position: relative;
+            width: 100%;
+            margin: 40px 120px;
+        }
+
+        #s-login form .login {
+            padding: 11px;
+            border: 1px solid #E6ECF0;
+            border-radius: 3px;
+            margin: 0 4px;
+        }
+
+        .login-id, .login-password {
+            width: 175px;
+            height: 28px;
+            border: none;
+            margin: 0 4px;
+        }
+
+        #find-password {
+            position: absolute;
+            top: 40px;
+            left: 227px;
+        }
+        .submit-button-b {
+            color: #1DA1F2;
+            font-weight: bold;
+            border: none;
+            background-color: white;
+
+        }
+        #s-login form .submit-button {
+            padding: 11px;
+            border: 1px solid #1DA1F2;
+            border-radius: 30px;
+            margin: 0 4px;
+        }
+        #s-content {
+            margin: 110px 190px;
+
+        }
+        #service #s-content p:nth-child(1) {}
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="intro"></div>
+        <div id="service">
+            <div id="s-login">
+                <form action="#" method="get">
+                    <span class="login"><input class="login-id" type="text" name="name" placeholder="휴대폰 번호, 이메일 주소 또는 사용자 아이디"/></span>
+                    <span class="login"><input class="login-password" type="password" name="password" placeholder="비밀번호"/></span>
+                    <span class="submit-button"><input class= "submit-button-b" type="submit" value="로그인"/></span>
+                </form>
+                <div id="find-password"><a href="#">비밀번호 찾기</a> </div>
+
+            </div>
+            <div id="s-content">
+                <img class="logo" src="Twitter_logo.png" width="70">
+                <p>지금 세계 곳곳에서 무슨 일이 일어나고 있는지 확인하세요.</p>
+                <p>지금 트위터에 가입하세요.</p>
+                <button class="sign-in-button" type="button" onclick="location.href = '#'">가입하기</button>
+                <button class="login-button" type="button" onclick="location.href = '#'">로그인</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">시스템 현황</a></li>
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">쿠키</a></li>
+            <li><a href="#">광고 정보</a></li>
+            <li><a href="#">브랜드</a></li>
+            <li><a href="#">애플리케이션</a></li>
+            <li><a href="#">광고</a></li>
+            <li><a href="#">마케팅</a></li>
+            <li><a href="#">비즈니스</a></li>
+            <li><a href="#">개발자</a></li>
+            <li><a href="#">디렉토리</a></li>
+            <li><a href="#">설정</a></li>
+            <li class="year">© 2019 Twitter</li>
+        </ul>
+    </div>
+</body>
+
+</html>
